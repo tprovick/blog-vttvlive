@@ -4,7 +4,8 @@ description: "After the drama around the stream of the X-Wing Finals at Canadian
 pubDate: "2018-03-20T00:10:30.000Z"
 wpSlug: "statement-about-x-wing-finals"
 wpPostId: 169
-tags: ["Uncategorised", "2018 FFG Canadian Nationals", "X-Wing"]
+tags: ["2018 FFG Canadian Nationals", "X-Wing"]
+thumbnail: "/wp-content/uploads/2016/09/VTTV-live-BW.png"
 ---
 
 After the drama around the stream of the X-Wing Finals at Canadian Nationals this past weekend and other incidents that have occurred in previous weeks, we at VTTV wanted to release a statement clarifying our position on the role of stream viewers and casters at an event as well as outlining exactly what happened this weekend. We are not looking to engage in a debate about the decisions that we or the judges made and intend for this to be our final word on the matter.

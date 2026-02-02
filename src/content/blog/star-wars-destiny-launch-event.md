@@ -4,7 +4,8 @@ description: "Once again we were able to get our YouTube videos online in a time
 pubDate: "2016-12-13T23:58:18.000Z"
 wpSlug: "star-wars-destiny-launch-event"
 wpPostId: 104
-tags: ["Uncategorised", "401 Games", "casual", "Star Wars", "Star Wars: Destiny"]
+tags: ["401 Games", "casual", "Star Wars", "Star Wars: Destiny"]
+thumbnail: "/wp-content/uploads/2016/11/swd01_preview2.jpg"
 ---
 
 Once again we were able to get our YouTube videos online in a timely fashion, but we were late with the post on our website.  To help celebrate the launch of Star Wars: Destiny on December 1st, we posted a number of videos we recorded during the Preview Event that took place on November 19th at [401 Games](http://401games.com), including a head-to-head pack opening, a teaching match between Travis and Victor, as well as two casual matches.

@@ -4,7 +4,8 @@ description: "This year, VTTV was lucky enough to provide live coverage from the
 pubDate: "2016-12-13T23:41:02.000Z"
 wpSlug: "star-wars-imperial-assault-2016-toronto-regional"
 wpPostId: 101
-tags: ["Uncategorised", "May track", "Regional Championship", "Star Wars", "Star Wars: Imperial Assault"]
+tags: ["May track", "Regional Championship", "Star Wars", "Star Wars: Imperial Assault"]
+thumbnail: "/wp-content/uploads/2016/10/swi26_preview2.jpg"
 ---
 
 This year, VTTV was lucky enough to provide live coverage from the 2016 Star Wars: Imperial Assault Toronto Regional Championship from [401 Games](http://401games.com) on November 12th.  While we got the matches up on YouTube relatively quickly, I never got around to collecting them here.

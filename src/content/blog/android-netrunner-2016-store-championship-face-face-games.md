@@ -4,7 +4,8 @@ description: "On December 17th, Face to Face Games Toronto hosted their 2016 Sto
 pubDate: "2017-01-03T14:00:04.000Z"
 wpSlug: "android-netrunner-2016-store-championship-face-face-games"
 wpPostId: 114
-tags: ["Uncategorised", "Android: Netrunner", "LCG", "tournament"]
+tags: ["Android: Netrunner", "LCG", "tournament"]
+thumbnail: "/wp-content/uploads/2016/11/adn_2016_storechamp_productlayout.png"
 ---
 
 On December 17th,  [Face to Face Games Toronto](http://www.facetofacegames.com/) hosted their 2016 Store Championship for Android: Netrunner. We were there to provide streaming coverage, featuring full commentary throughout. You can watch the whole stream here, but we'd highlighted most of the matches from the top 8 below. Unfortunately the recording failed for over 5 minutes of the winners semi-final match, so while it is available in the full stream, we don't have it as an individual match.

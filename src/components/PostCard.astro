@@ -1,0 +1,212 @@
+---
+import FormattedDate from './FormattedDate.astro';
+
+interface Props {
+	title: string;
+	body?: string;
+	description?: string;
+	pubDate: Date;
+	slug: string;
+	thumbnail?: string;
+	author?: string;
+}
+
+const { title, body, description, pubDate, slug, thumbnail, author = 'Travis' } = Astro.props;
+
+// Extract first paragraph from markdown body, converting to HTML
+function getFirstParagraph(markdown: string): string {
+	// Split by double newlines to get paragraphs
+	const paragraphs = markdown.split(/\n\n+/);
+
+	// Find first non-empty paragraph that's not a heading, list, or code block
+	for (const p of paragraphs) {
+		const trimmed = p.trim();
+		if (!trimmed) continue;
+		if (trimmed.startsWith('#')) continue;  // Skip headings
+		if (trimmed.startsWith('-') || trimmed.startsWith('*') || trimmed.match(/^\d+\./)) continue;  // Skip lists
+		if (trimmed.startsWith('```') || trimmed.startsWith('    ')) continue;  // Skip code blocks
+
+		// Convert markdown links [text](url) -> <a href="url">text</a>
+		let text = trimmed.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
+		// Strip bold/italic (keep text)
+		text = text.replace(/\*\*([^*]+)\*\*/g, '$1');
+		text = text.replace(/\*([^*]+)\*/g, '$1');
+		text = text.replace(/_([^_]+)_/g, '$1');
+		// Strip inline code (keep text)
+		text = text.replace(/`([^`]+)`/g, '$1');
+
+		return text;
+	}
+	return markdown.slice(0, 500);
+}
+
+const excerpt = body ? getFirstParagraph(body) : (description || '');
+---
+
+<article class="post-card">
+	{thumbnail && (
+		<a href={`/blog/${slug}/`} class="post-thumbnail">
+			<img src={thumbnail} alt={title} class="thumbnail-image" loading="lazy" />
+		</a>
+	)}
+	<div class="post-content">
+		<h2 class="post-title">
+			<a href={`/blog/${slug}/`}>{title}</a>
+		</h2>
+		<div class="post-meta">
+			<span class="meta-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" width="12" height="12">
+					<path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13zM8.5 4h-1v4.5l3.5 2 .5-.87-3-1.73V4z"/>
+				</svg>
+			</span>
+			<FormattedDate date={pubDate} />
+			<span class="meta-icon user-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" width="12" height="12">
+					<path d="M8 8a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 1c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+				</svg>
+			</span>
+			<a href="/about" class="post-author">{author}</a>
+		</div>
+		<p class="post-excerpt" set:html={excerpt} />
+	</div>
+</article>
+
+<style>
+	.post-card {
+		display: flex;
+		gap: 1rem;
+		padding: 1rem 0;
+		border-bottom: 1px solid #e5e5e5;
+	}
+
+	.post-card:first-child {
+		padding-top: 0;
+	}
+
+	.post-card:last-child {
+		border-bottom: none;
+	}
+
+	.post-thumbnail {
+		flex-shrink: 0;
+		display: block;
+		width: 326px;
+		height: 245px;
+		overflow: hidden;
+	}
+
+	.thumbnail-image {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.post-thumbnail:hover .thumbnail-image {
+		opacity: 0.9;
+	}
+
+	.post-content {
+		flex: 1;
+		min-width: 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.post-title {
+		margin: 0 0 0.4rem 0;
+		font-size: 1rem;
+		font-weight: 700;
+		line-height: 1.3;
+	}
+
+	.post-title a {
+		color: #333;
+		text-decoration: none;
+	}
+
+	.post-title a:hover {
+		color: #e64946;
+		text-decoration: none;
+	}
+
+	.post-meta {
+		font-size: 0.75rem;
+		color: #999;
+		margin-bottom: 0.5rem;
+		display: flex;
+		align-items: center;
+		gap: 0.25rem;
+	}
+
+	.meta-icon {
+		display: inline-flex;
+		align-items: center;
+		color: #999;
+	}
+
+	.meta-icon svg {
+		display: block;
+	}
+
+	.user-icon {
+		margin-left: 0.5rem;
+	}
+
+	.post-author {
+		color: #999;
+		text-decoration: none;
+	}
+
+	.post-author:hover {
+		color: #e64946;
+		text-decoration: none;
+	}
+
+	.post-excerpt {
+		margin: 0;
+		font-size: 0.85rem;
+		color: #666;
+		line-height: 1.5;
+		flex: 1;
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 10;
+	}
+
+	.post-excerpt :global(a) {
+		color: #e64946;
+		text-decoration: none;
+	}
+
+	.post-excerpt :global(a:hover) {
+		text-decoration: underline;
+	}
+
+	@media (max-width: 768px) {
+		.post-card {
+			flex-direction: column;
+			gap: 0.5rem;
+		}
+
+		.post-thumbnail {
+			width: 100%;
+			height: auto;
+			aspect-ratio: 4/3;
+		}
+
+		.thumbnail-image {
+			max-width: 100%;
+			width: 100%;
+		}
+
+		.post-title {
+			font-size: 0.95rem;
+		}
+
+		.post-excerpt {
+			-webkit-line-clamp: 4;
+		}
+	}
+</style>

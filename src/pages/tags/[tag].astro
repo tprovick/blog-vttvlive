@@ -1,0 +1,133 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import PostCard from '../../components/PostCard.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import { SITE_TITLE } from '../../consts';
+
+export async function getStaticPaths() {
+	const posts = await getCollection('blog');
+
+	// Get all unique tags
+	const tags = new Set<string>();
+	posts.forEach(post => {
+		if (post.data.tags) {
+			post.data.tags.forEach(tag => {
+				if (tag.toLowerCase() !== 'uncategorized') {
+					tags.add(tag.toLowerCase().replace(/\s+/g, '-'));
+				}
+			});
+		}
+	});
+
+	return Array.from(tags).map(tag => ({
+		params: { tag },
+		props: { tag }
+	}));
+}
+
+const { tag } = Astro.params;
+const posts = await getCollection('blog');
+
+// Filter posts that have this tag
+const tagPosts = posts
+	.filter(post => {
+		if (!post.data.tags) return false;
+		return post.data.tags.some(t =>
+			t.toLowerCase().replace(/\s+/g, '-') === tag
+		);
+	})
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+// Get the display name for the tag (original casing)
+const displayTag = posts
+	.flatMap(post => post.data.tags || [])
+	.find(t => t.toLowerCase().replace(/\s+/g, '-') === tag) || tag;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`${displayTag} | ${SITE_TITLE}`} description={`Posts tagged with ${displayTag}`} />
+		<style>
+			body {
+				background: #f7f7f7;
+			}
+
+			.site-frame {
+				max-width: 1100px;
+				margin: 25px auto;
+				background: white;
+				box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+				overflow: hidden;
+			}
+
+			.page-layout {
+				display: flex;
+				align-items: flex-start;
+				gap: 2rem;
+				padding: 2rem 1.5rem;
+			}
+
+			.main-content {
+				flex: 1;
+				min-width: 0;
+			}
+
+			.tag-header {
+				margin-bottom: 1.5rem;
+			}
+
+			.tag-title {
+				font-size: 1.5rem;
+				font-weight: 700;
+				color: #333;
+				margin: 0;
+			}
+
+			.tag-count {
+				font-size: 0.9rem;
+				color: #999;
+				margin-top: 0.25rem;
+			}
+
+			@media (max-width: 900px) {
+				.site-frame {
+					margin: 25px;
+				}
+
+				.page-layout {
+					flex-direction: column;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="site-frame">
+			<Header />
+			<div class="page-layout">
+				<main class="main-content">
+					<div class="tag-header">
+						<h1 class="tag-title">Tag: {displayTag}</h1>
+						<p class="tag-count">{tagPosts.length} post{tagPosts.length !== 1 ? 's' : ''}</p>
+					</div>
+					<div class="posts-list">
+						{tagPosts.map((post) => (
+							<PostCard
+								title={post.data.title}
+								body={post.body}
+								pubDate={post.data.pubDate}
+								slug={post.id}
+								thumbnail={post.data.thumbnail}
+							/>
+						))}
+					</div>
+				</main>
+				<Sidebar />
+			</div>
+			<Footer />
+		</div>
+	</body>
+</html>

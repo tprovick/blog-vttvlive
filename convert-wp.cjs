@@ -161,7 +161,7 @@ function convertPost(post) {
     pubDate: new Date(pubDate),
     wpSlug,
     wpPostId,
-    tags: [...new Set([...categories, ...tags])],
+    tags: [...new Set([...categories, ...tags])].filter(t => t.toLowerCase() !== 'uncategorized'),
     content: markdown,
   };
 }

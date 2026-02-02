@@ -1,0 +1,63 @@
+---
+// Sidebar with social links matching original WordPress theme
+---
+
+<aside class="sidebar">
+	<div class="social-links">
+		<a href="https://www.patreon.com/vttvlive" target="_blank" rel="noopener" class="social-link">
+			<img src="/wp-content/uploads/2018/02/patreon.png" alt="Patreon" />
+		</a>
+		<a href="https://www.twitter.com/vttvlive" target="_blank" rel="noopener" class="social-link">
+			<img src="/wp-content/uploads/2016/09/icon_twitter.png" alt="Twitter" />
+		</a>
+		<a href="https://www.youtube.com/channel/UCk3Ylq2jwldNGynR7HLoFbA" target="_blank" rel="noopener" class="social-link">
+			<img src="/wp-content/uploads/2016/09/icon_youtube.png" alt="YouTube" />
+		</a>
+		<a href="https://www.twitch.tv/vttvlive" target="_blank" rel="noopener" class="social-link">
+			<img src="/wp-content/uploads/2016/09/icon_twitch.png" alt="Twitch" />
+		</a>
+		<a href="/rss.xml" class="social-link">
+			<img src="/wp-content/uploads/2016/09/icon_rss.png" alt="RSS Feed" />
+		</a>
+	</div>
+</aside>
+
+<style>
+	.sidebar {
+		width: auto;
+		flex-shrink: 0;
+	}
+
+	.social-links {
+		display: flex;
+		flex-wrap: nowrap;
+		gap: 0.5rem;
+		justify-content: flex-start;
+	}
+
+	.social-link {
+		display: block;
+	}
+
+	.social-link img {
+		width: 48px;
+		height: 48px;
+		display: block;
+		transition: opacity 0.2s;
+	}
+
+	.social-link:hover img {
+		opacity: 0.8;
+	}
+
+	@media (max-width: 900px) {
+		.sidebar {
+			width: 100%;
+			margin-top: 2rem;
+		}
+
+		.social-links {
+			justify-content: center;
+		}
+	}
+</style>

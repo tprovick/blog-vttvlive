@@ -4,7 +4,8 @@ description: "The 2018 FFG Canadian Nationals are only two days away, taking pla
 pubDate: "2018-03-14T23:45:29.000Z"
 wpSlug: "2018-canadian-nationals"
 wpPostId: 158
-tags: ["Uncategorised", "2018", "2018 FFG Canadian Nationals", "Canadian Nationals", "Fantasy Flight Games", "FFG", "Toronto"]
+tags: ["2018", "2018 FFG Canadian Nationals", "Canadian Nationals", "Fantasy Flight Games", "FFG", "Toronto"]
+thumbnail: "/wp-content/uploads/2018/03/nats-quick.png"
 ---
 
 The 2018 FFG Canadian Nationals are only two days away, taking place at [Breakoutcon](https://breakoutcon.com/) on March 16-18 here in Toronto.  Just like the last two years, VTTV will be there to bring you as much live coverage as we can manage.  That means, this year, we'll actually be running two simultaneous streams for all three days of the tournament.  All of those streams can be found on our regular VTTV [YouTube channel](https://gaming.youtube.com/vttvlive) and we have created a second Twitch channel - [vttvlive2](https://www.twitch.tv/vttvlive2) - for those that follow us there.  See below for a breakdown of all the events we will be covering.

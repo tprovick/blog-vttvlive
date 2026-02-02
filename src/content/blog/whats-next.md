@@ -4,7 +4,8 @@ description: "Victor and I have spent much of the past month recovering from Can
 pubDate: "2016-10-15T01:58:34.000Z"
 wpSlug: "whats-next"
 wpPostId: 47
-tags: ["Uncategorised", "schedule"]
+tags: ["schedule"]
+thumbnail: "/wp-content/uploads/2016/10/whk19_preview_lrg.png"
 ---
 
 Victor and I have spent much of the past month recovering from Canadian Nationals, but our fledgling audience might be wondering if we will be producing any more content in the future? We have a number of live events coming up over the next few months:

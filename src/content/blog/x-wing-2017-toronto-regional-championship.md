@@ -4,7 +4,8 @@ description: "Back in January, Face to Face Games Toronto hosted the 2017 Toront
 pubDate: "2017-02-27T03:20:19.000Z"
 wpSlug: "x-wing-2017-toronto-regional-championship"
 wpPostId: 141
-tags: ["Uncategorised", "May track", "Star Wars", "tournament", "X-Wing"]
+tags: ["May track", "Star Wars", "tournament", "X-Wing"]
+thumbnail: "/wp-content/uploads/2017/02/swx_op_preview.jpg"
 ---
 
 Back in January, [Face to Face Games Toronto](http://www.facetofacegames.com/) hosted the 2017 Toronto X-Wing Regional Championship.  Over 100 of the best X-Wing players came to Seneca College and Victor and I had the pleasure of streaming the entire event.  Special thanks to Mike for sacrificing his spot at the event to provide insightful commentary throughout the day. It was a mad dash to get the venue set up, so unfortunately we weren't able to capture the first round.
