@@ -1,0 +1,59 @@
+{
+  "redirects": [
+    {
+      "source": "/welcome",
+      "destination": "/blog/welcome",
+      "permanent": true
+    },
+    {
+      "source": "/2016-ffg-canadian-national-championships",
+      "destination": "/blog/2016-ffg-canadian-national-championships",
+      "permanent": true
+    },
+    {
+      "source": "/congratulations-2016-canadian-champions",
+      "destination": "/blog/congratulations-2016-canadian-champions",
+      "permanent": true
+    },
+    {
+      "source": "/whats-next",
+      "destination": "/blog/whats-next",
+      "permanent": true
+    },
+    {
+      "source": "/star-wars-imperial-assault-2016-toronto-regional",
+      "destination": "/blog/star-wars-imperial-assault-2016-toronto-regional",
+      "permanent": true
+    },
+    {
+      "source": "/star-wars-destiny-launch-event",
+      "destination": "/blog/star-wars-destiny-launch-event",
+      "permanent": true
+    },
+    {
+      "source": "/star-wars-destiny-box-tournament-12102016",
+      "destination": "/blog/star-wars-destiny-box-tournament-12102016",
+      "permanent": true
+    },
+    {
+      "source": "/android-netrunner-2016-store-championship-face-face-games",
+      "destination": "/blog/android-netrunner-2016-store-championship-face-face-games",
+      "permanent": true
+    },
+    {
+      "source": "/x-wing-2017-toronto-regional-championship",
+      "destination": "/blog/x-wing-2017-toronto-regional-championship",
+      "permanent": true
+    },
+    {
+      "source": "/2018-canadian-nationals",
+      "destination": "/blog/2018-canadian-nationals",
+      "permanent": true
+    },
+    {
+      "source": "/statement-about-x-wing-finals",
+      "destination": "/blog/statement-about-x-wing-finals",
+      "permanent": true
+    }
+  ]
+}

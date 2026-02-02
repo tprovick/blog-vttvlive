@@ -1,0 +1,34 @@
+---
+title: "Statement About X-Wing Finals"
+description: "After the drama around the stream of the X-Wing Finals at Canadian Nationals this past weekend and other incidents that have occurred in previous weeks, we at..."
+pubDate: "2018-03-20T00:10:30.000Z"
+wpSlug: "statement-about-x-wing-finals"
+wpPostId: 169
+tags: ["Uncategorised", "2018 FFG Canadian Nationals", "X-Wing"]
+---
+
+After the drama around the stream of the X-Wing Finals at Canadian Nationals this past weekend and other incidents that have occurred in previous weeks, we at VTTV wanted to release a statement clarifying our position on the role of stream viewers and casters at an event as well as outlining exactly what happened this weekend. We are not looking to engage in a debate about the decisions that we or the judges made and intend for this to be our final word on the matter.
+
+### Our Policy
+
+First, our position is that only people at the event can be considered to fill the Spectator role. As such, information originating from the stream and not observed first-hand by someone on the streaming team will not be taken to a leader at the event. Below is the relevant paragraph from the [Tournament Regulations](https://images-cdn.fantasyflightgames.com/filer_public/95/12/9512d949-49fa-4ed8-ada5-0918cc8f39c2/x-wing_tournament_regulations_v30_text_version.pdf):
+
+> A spectator is any individual _at a tournament_ not actively engaging in another role. Spectators must not disturb an ongoing game, and cannot provide any input or assistance to players during their games. If a spectator believes _they have witnessed_ a breach of the rules in a game they are watching, other than a missed opportunity, he or she may bring it to the attention of a leader.
+
+In addition to the above, the information from the stream can be incorrect or may not have full context of the match being played. That obviously was not the case this weekend, but has occurred in the past and we will not risk acting on bad information if we do not have someone who witnessed events directly. Note that casters themselves **do** qualify as Spectators and can go to a leader with something that they witnessed directly. They may also, in some situations, solicit the stream for confirmation of something that they thought they saw. We have also had judges helping out with commentary or producing the stream that can intervene in the match directly. We try to avoid that situation as much as possible, but when there isn't another judge available who is familiar with the rules we will help out, as was done for some events this weekend when the primary judges were not available.
+
+### X-Wing Nationals Incident
+
+As for the specific infraction at Nationals; in the final match there was a situation where a ship ("Quickdraw") was hit with a Harpoon missile but neither player remembered to assign the "Harpooned!" condition token. Later in the same Combat phase the ship ("Quickdraw") was hit by an uncanceled critical result which would have triggered the "Harpooned!" condition, again neither player noticed or resolved the "Harpooned!" condition. The table judges observing the match did not catch it, nor did the dozen spectators watching nearby. The two commentators and stream producer did not catch it.  A bunch of exhausted humans missed a token. Some of the 700 viewers on stream did notice and reported it in chat. The stream producer reiterated the VTTV policy in chat on Spectators and the stream. The Chat, which was already angry the missed call, escalated demands to inform a judge.  Finally, an X-Wing community member called one of the participants of the match directly and asked to speak to a judge and, on speakerphone, started to explain what had been missed. The judges explained how they would rule it.  At that point, the player hung up the phone. This is how the two judges present ruled:
+
+> The players had already begun the next round and had exited the planning phase. In order to minimize disruption to the current game state, it was ruled that the "Harpooned!" condition would be considered to have never been applied to "Quickdraw".
+
+This also meant that when Quickdraw was later destroyed, the Harpooned! condition was not present and would not trigger.  You may or may not agree with this ruling. But judges have to make tough calls all the time and we believe that the judge team we had did a amazing job all weekend.  And as the team running the stream, we believe that it is completely inappropriate for players not present at the event to attempt to contact judges directly. Both players were a class act about the whole situation and I'd like to thank them for that.  I hope they don't suffer too much grief because they agreed to appear on stream. The level of vitriol we saw both in stream chat and in some of the subsequent posts elsewhere on the internet is incredibly disappointing.  It is never appropriate to insult or otherwise verbally attack casters about a stated policy.  Anybody who does this in the future will be banned from chat.  Full stop.  The same goes for any verbal attacks against players, judges or commentators. This kind of drama will be a reason why venues decide it's not worth the hassle of allowing anyone to film at their event. It already is a reason why players decline to appear on stream. It will be why judges decide that they aren't going to volunteer their time to help at events. And it will be why streamers decide that it's not worth it to invest in producing content. So, even if you think this kind of crap is just the way it is on the internet and people need to have thicker skin, consider whether you want your behaviour to lead to less event coverage in the future.
+
+### Thank You
+
+Thank you to all the players that came out to Canadian Nationals this weekend. We were stuck behind the booth for most of it, but we hope you all had a great time.  Congratulations to all the new champions that were crowned this weekend.  I hope those that can attend Worlds this year go on to a strong showing there.  We'll be cheering you on.  And thank you to all the viewers who turned in this weekend and decided not to engage in a witch hunt or other abuse. It was fun talking with you in chat and I hope you tune in for future events.
+
+**\- Victor & Travis.**
+
+**FINAL UPDATE:** It was not our intention to publish this with comments enabled.  We have no interest in hosting further debate here.  We will be disabling comments shortly and removing any current comments.  We have also made some minor edits to the characterization of the phone call as it was not relevant to this statement.
